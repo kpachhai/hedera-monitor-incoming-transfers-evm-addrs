@@ -1,8 +1,8 @@
 {
-  "name": "hedera-monitor-incoming-transfers-evm-addrs",
+  "name": "hedera-monitor-query-watched-evm-addrs",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/kpachhai/hedera-monitor-incoming-transfers-evm-addrs#readme",
+  "homepage": "https://github.com/kpachhai/hedera-monitor-incoming-transfers-evm-addrs/query-watched-evm-addrs#readme",
   "bugs": {
     "url": "https://github.com/kpachhai/hedera-monitor-incoming-transfers-evm-addrs/issues"
   },

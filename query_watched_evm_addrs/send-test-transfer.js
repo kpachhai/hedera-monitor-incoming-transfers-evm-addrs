@@ -5,8 +5,7 @@ const {
   TransferTransaction,
   Hbar
 } = require("@hiero-ledger/sdk");
-import * as dotenv from "dotenv";
-dotenv.config();
+require("dotenv").config();
 
 async function sendTestTransfer(recipientEvmAddress) {
   // ===========================================
