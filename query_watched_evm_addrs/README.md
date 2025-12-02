@@ -12,7 +12,7 @@ On Hedera, you can generate EVM addresses offline from ECDSA public keys (simila
 
 ### Original Requirement
 
-> "In order to identify which transactions are sending to one of our EVM addresses, it requires that we call the `GET /api/v1/accounts/{idOrAliasOrEvmAddress}` endpoint **for each alias we see in a transfer transaction**, which puts a lot of load on the mirror node. So I'm looking to see if there's some other way we could parse out the intended destination, for example by parsing the transaction input data."
+Resolving every alias via the accounts API creates excessive load on the Mirror Node. Can we instead identify the destination EVM address or Account Id by directly parsing the transaction input data?
 
 ### The Challenge
 
