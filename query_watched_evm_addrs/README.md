@@ -87,7 +87,7 @@ Instead of scanning every transaction on the network and querying each alias, th
 - ❌ **Does NOT parse the intended destination** - We cannot tell if sender used `0x...` vs `0.0.xxxxx`
 - ❌ **Does NOT avoid the accounts endpoint** - We still use it, just more efficiently (only for our addresses)
 
-**If you need to know the exact format the sender used (EVM address vs entity ID), you need [Option 2](../subscribe_to_record_stream/README.md).**
+**If you need to know the exact format the sender used (EVM address vs entity ID), you need [Option 2](../direct_database_query/README.md).**
 
 ## Installation
 
