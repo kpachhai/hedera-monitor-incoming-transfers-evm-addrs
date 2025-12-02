@@ -14,7 +14,7 @@ On Hedera, you can generate EVM addresses offline from ECDSA public keys (simila
 
 ### Original Requirement
 
-> "In order to identify which transactions are sending to one of our EVM addresses, it requires that we call the `GET /api/v1/accounts/{idOrAliasOrEvmAddress}` endpoint **for each alias we see in a transfer transaction**, which puts a lot of load on the mirror node. So I'm looking to see if there's some other way we could parse out the intended destination, for example by parsing the transaction input data."
+Resolving every alias via the accounts API creates excessive load on the Mirror Node. Can we instead identify the destination EVM address or Account Id by directly parsing the transaction input data?
 
 ## Why this satisfies the original requirement
 
@@ -76,7 +76,7 @@ npm install
 
 - For Solo you can set the env var on the importer deployment and it will restart:
 
-You can first run your own Solo network by following instructions at [Solo v0.50.0 Guide](https://solo.hiero.org/v0.50.0/docs/step-by-step-guide/)
+You can first run your own Solo network by following instructions at [Solo v0.50.0 Guide](https://solo.hiero.org/v0.50.0/docs/step-by-step-guide/). Note that Solo is used for testing purposes but you would be running the mirror node on testnet or mainnet for your use case. 
 
 By default, transaction bytes are not persisted on Solo. You can enable it by:
 
