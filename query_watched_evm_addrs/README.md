@@ -211,7 +211,7 @@ node send-test-transfer. js 0xc0d5974489287241059c928b031c30ed86f7cb57
 - You want a simple solution without running your own infrastructure
 - You're okay with polling-based detection
 
-❌ Consider [Option 2](../subscribe_to_record_stream/README.md) if:
+❌ Consider [Option 2](../direct_database_query/README.md) if:
 
 - You need to know exactly what address format the sender used
 - You have access to a Mirror Node database
